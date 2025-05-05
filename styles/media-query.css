@@ -32,6 +32,12 @@
     div#formulario > p {
         font-size: 1em;
     }
+
+    input[type=submit], a.botao {
+        margin: auto;
+        margin-top: 8px;
+        width: 60%;
+    }
 }
 
 @media screen and (min-width: 992px) { /* Desktop e Grandes Telas*/
@@ -60,5 +66,11 @@
 
     div#formulario > p {
         font-size: 1.1em;
+    }
+
+    input[type=submit], a.botao {
+        margin: auto;
+        margin-top: 8px;
+        width: 70%;
     }
 }
