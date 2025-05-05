@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/media-query.css">
     <link rel="shortcut icon" href="images/login-unico.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300&icon_names=person,vpn_key" rel="stylesheet" />
 </head>
 <body>
     <section id="login">
@@ -15,7 +16,18 @@
             <h1>Login</h1>
             <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
             <form action="login.js" method="post">
-
+                <div class="campo">
+                    <span class="material-symbols-outlined">person</span>
+                    <input type="email" name="email" id="iemail" required autocomplete="email" placeholder="Digite seu e-mail" maxlength="128">
+                    <label for="iemail">E-mail</label>
+                </div>
+                <div class="campo">
+                    <span class="material-symbols-outlined">vpn_key</span>
+                    <input type="password" name="senha" id="isenha" required autocomplete="current-password" placeholder="Digite sua senha" minlength="12" maxlength="64">
+                    <label for="isenha">Senha</label>
+                </div>
+                <input type="submit" value="Entrar">
+                <a href="esqueci.html">Esqueci a senha</a>
             </form>
         </div>
     </section>
